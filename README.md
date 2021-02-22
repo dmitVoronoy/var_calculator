@@ -1,6 +1,7 @@
 ## Value at Risk calculation service
 Simple web-application based on Micronaut Framework   
 ### Building and running
+**Java 15 is the minimum required java version**  
 The application can be built and run by gradle command  
 `./gradlew run`  
 ### Usage
