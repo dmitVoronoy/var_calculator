@@ -35,7 +35,7 @@ dependencies {
 
 
 application {
-    mainClass.set("org.voronoy.edu.Application")
+    mainClass.set("org.voronoy.edu.varcalc.Application")
 }
 
 java {

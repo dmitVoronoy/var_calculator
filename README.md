@@ -1,13 +1,11 @@
-## Micronaut 2.3.2 Documentation
-
-- [User Guide](https://docs.micronaut.io/2.3.2/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.3.2/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.3.2/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
-
----
-
-## Feature http-client documentation
-
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
+## Value at Risk calculation service
+Simple web-application based on Micronaut Framework   
+The application can be built and run by gradle command  
+`./gradlew run`  
+Curl can be used to retrieve the result  
+For a single trade:  
+`curl -H "Content-Type: application/json" --data @data/trade.json http://localhost:8080/v1/var/trade/99.0`  
+For a portfolio:
+`curl -H "Content-Type: application/json" --data @data/portfolio.json http://localhost:8080/v1/var/portfolio/95`  
+Historical data is provided as a json file, there are two example files in the "data" directory for demo convenience  
+Trade information is represented in a very simple form. It can be extended if needed
